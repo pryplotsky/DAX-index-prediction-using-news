@@ -1,3 +1,6 @@
-# DAX index prediction using news
-We examine how news and headlines affect the stock markets index. 
-We developed a model that takes as an input the business articles of large German newspapers (Die Zeit, Der Spiegel) and as output a development of the stock markets index on the following as binary category (if stock will increase or decrease). Sentiment analysis of the news and the headlines is performed using a German version of BERT, which is a pre-trained transformer model by Google for Natural Language Processing (NLP). Using BERT model, we transformed each text into 768 numerical features vector. This feature vector was used for classification as 768 new features. After it we applied Long Short Term Memory (LSTM) model together with 768 numerical features from BERT model to predict the development of the stock markets index on the following day.
+# DAX Index Prediction Using News
+We investigate how news articles and headlines influence the DAX stock market index. Our approach involves developing a model that takes business articles from major German newspapers, such as Die Zeit and Der Spiegel, as input and predicts whether the index will rise or fall the following day (a binary classification task).
+
+Sentiment analysis of the news content and headlines is performed using a German-language version of BERT, a pre-trained transformer model developed by Google for Natural Language Processing (NLP). Each article is converted into a 768-dimensional feature vector using BERT.
+
+These feature vectors are then used as inputs to a Long Short-Term Memory (LSTM) model, which captures temporal dependencies and predicts the direction of the DAX index movement on the following day.
